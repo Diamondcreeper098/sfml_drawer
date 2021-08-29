@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(rusty_VCS LANGUAGES CXX)
+project(sfml_drawer LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(SFML 2.5 COMPONENTS window graphics audio REQUIRED)
 
-add_executable(rusty_VCS main.cpp game.cpp)
+add_executable(sfml_drawer main.cpp game.cpp)
 
-target_link_libraries(rusty_VCS sfml-window sfml-graphics sfml-audio)
+target_link_libraries(sfml_drawer sfml-window sfml-graphics sfml-audio)
 
